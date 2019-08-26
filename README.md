@@ -6,7 +6,7 @@
 [![package license](https://img.shields.io/npm/l/styled-nanoreset.svg?style=flat-square)](https://npmjs.org/package/styled-nanoreset)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-> Nanoreset for Styled Components
+> [Nanoreset](https://github.com/tiaanduplessis/nanoreset/) + Styled Components
 
 ## Table of Contents
 
