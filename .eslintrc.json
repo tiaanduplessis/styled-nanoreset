@@ -1,4 +1,6 @@
 {
-  "root": true,
-  "extends": "nitpicky"
+  "extends": "nitpicky",
+  "env": {
+    "browser": true
+  }
 }

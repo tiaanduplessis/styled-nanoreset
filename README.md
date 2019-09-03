@@ -4,7 +4,7 @@
 [![package downloads](https://img.shields.io/npm/dm/styled-nanoreset.svg?style=flat-square)](https://npmjs.org/package/styled-nanoreset)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![package license](https://img.shields.io/npm/l/styled-nanoreset.svg?style=flat-square)](https://npmjs.org/package/styled-nanoreset)
-[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![nitpicky-code-style](https://img.shields.io/badge/code%20style-nitpicky-7681ED.svg?style=flat-square)](https://github.com/tiaanduplessis/eslint-config-nitpicky)
 
 > [Nanoreset](https://github.com/tiaanduplessis/nanoreset/) + Styled Components
 
@@ -20,7 +20,7 @@
 
 ## Install
 
-This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
+This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com).
 
 ```sh
 $ npm install styled-nanoreset
@@ -83,4 +83,4 @@ from [Sergey Sova](https://github.com/sergeysova).
 ## License
 
 MIT
-    
+
