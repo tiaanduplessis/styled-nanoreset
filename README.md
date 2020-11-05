@@ -4,7 +4,7 @@
 [![package downloads](https://img.shields.io/npm/dm/styled-nanoreset.svg?style=flat-square)](https://npmjs.org/package/styled-nanoreset)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![package license](https://img.shields.io/npm/l/styled-nanoreset.svg?style=flat-square)](https://npmjs.org/package/styled-nanoreset)
-[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![nitpicky-code-style](https://img.shields.io/badge/code%20style-nitpicky-7681ED.svg?style=flat-square)](https://github.com/tiaanduplessis/eslint-config-nitpicky)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 > [Nanoreset](https://github.com/tiaanduplessis/nanoreset/) + Styled Components
 
@@ -32,17 +32,11 @@ $ yarn add styled-nanoreset
 
 ```jsx
 import * as React from 'react'
-import { createGlobalStyle } from 'styled-components'
-import reset from 'styled-nanoreset'
-
-const GlobalStyle = createGlobalStyle`
-  ${reset}
-  /* other styles */
-`
+import { NanoReset } from 'styled-nanoreset'
 
 const App = () => (
   <React.Fragment>
-    <GlobalStyle />
+    <NanoReset />
     <div>Hi, I'm an app!</div>
   </React.Fragment>
 }
@@ -50,8 +44,7 @@ const App = () => (
 export default App
 ```
 
-If you're using Styled Components version 3.x or 2.x, you'll need to use the
-`injectGlobal` api instead:
+`reset` is also available as a named export:
 
 ```javascript
 import { injectGlobal } from 'styled-components'
@@ -61,17 +54,10 @@ injectGlobal`
 `
 ```
 
-`reset` is also available as a named export:
-
-```javascript
-import { reset } from 'styled-nanoreset'
-```
-
 ## Similar
 
 Also see [styled-normalize](https://www.npmjs.com/package/styled-normalize)
 from [Sergey Sova](https://github.com/sergeysova).
-
 
 ## Contribute
 

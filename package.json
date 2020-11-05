@@ -1,7 +1,7 @@
 {
   "name": "styled-nanoreset",
   "description": "Nanoreset for Styled Components",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
@@ -9,12 +9,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "node inject.js && npm run clean && babel src/ -d dist/",
+    "build": "node generate.js && npm run clean && babel src/ -d dist/",
     "clean": "rm -rf dist && mkdir -p dist",
-    "postbuild": "flow-copy-source src dist",
-    "prebuild": "npm t",
-    "preversion": "npm run build",
-    "test": "eslint -c .eslintrc.json src"
+    "preversion": "npm run build"
   },
   "homepage": "https://github.com/tiaanduplessis/styled-nanoreset#readme",
   "repository": {
@@ -29,27 +26,19 @@
     "styled-components"
   ],
   "dependencies": {
-    "nanoreset": "^3.0.2"
+    "nanoreset": "5.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.5.5",
-    "@babel/core": "7.5.5",
-    "@babel/plugin-transform-modules-commonjs": "7.5.0",
-    "@babel/preset-env": "7.5.5",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.3.0",
-    "eslint-config-nitpicky": "^4.0.0",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-promise": "^4.2.1",
-    "flow-copy-source": "2.0.2",
-    "prettier": "^1.18.2",
-    "styled-components": "4.3.2"
+    "@babel/cli": "7.12.1",
+    "@babel/core": "7.12.3",
+    "@babel/plugin-transform-modules-commonjs": "7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "styled-components": "5.2.1"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "peerDependencies": {
-    "styled-components": ">=3.0.0 || >=4.0.0"
+    "styled-components": ">=4.0.0"
   }
 }
